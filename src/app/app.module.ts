@@ -11,7 +11,7 @@ import { AppRoutingModule }     from './app-routing.module';
 import { AppComponent }         from './app.component';
 import { DashboardComponent }   from './dashboard/dashboard.component';
 import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
-// #TODO - import hero component
+import { HeroesComponent } from './heroes/heroes.component';
 import { HeroSearchComponent }  from './hero-search/hero-search.component';
 import { HeroService }          from './hero.service';
 // #TODO - import message service
@@ -35,7 +35,7 @@ import { MessagesComponent } from './messages/messages.component';
   declarations: [
     AppComponent,
     DashboardComponent,
-    // #TODO - declare Hero Component
+    HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
     HeroSearchComponent

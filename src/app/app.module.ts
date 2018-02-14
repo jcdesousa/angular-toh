@@ -16,6 +16,7 @@ import { HeroSearchComponent }  from './hero-search/hero-search.component';
 import { HeroService }          from './hero.service';
 // #TODO - import message service
 import { MessagesComponent } from './messages/messages.component';
+import { MessageService } from './message.service';
 
 @NgModule({
   imports: [
@@ -40,7 +41,7 @@ import { MessagesComponent } from './messages/messages.component';
     MessagesComponent,
     HeroSearchComponent
   ],
-  providers: [ HeroService, /*TODO - declare Message Service */ ],
+  providers: [ HeroService, MessageService],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

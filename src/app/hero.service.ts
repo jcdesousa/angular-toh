@@ -6,7 +6,7 @@ import { of } from 'rxjs/observable/of';
 import { catchError, map, tap } from 'rxjs/operators';
 
 import { Hero } from './hero';
-// #TODO - inject message service
+import { MessageService } from './message.service';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -19,7 +19,7 @@ export class HeroService {
 
   constructor(
     private http: HttpClient,
-    /* private messageService: MessageService */ ) { }
+    private messageService: MessageService) { }
 
   /** GET heroes from the server */
   getHeroes (): Observable<Hero[]> {
@@ -116,7 +116,6 @@ export class HeroService {
 
   /** Log a HeroService message with the MessageService */
   private log(message: string) {
-    // #TODO - log the message to MessageService
-    console.log(message);
+    this.messageService.add('HeroService: ' + message);
   }
 }

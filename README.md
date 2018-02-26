@@ -513,7 +513,7 @@ Modify the constructor with a parameter that declares a public `messageService` 
 ```typescript
 // /src/app/messages/messages.component.ts
 
-constructor(private messageService: MessageService) { }
+constructor(public messageService: MessageService) { }
 ```
 The `messageService` property must be public because you're about to bind to it in the template.
 

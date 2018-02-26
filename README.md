@@ -70,7 +70,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 Update the binding in the template to announce the hero's name and show both `id` and `name` in a details layout like this:
 
 ```html
-<!-- src/app/heroes/hero-detail.component.html !-->
+<!-- src/app/hero-detail/hero-detail.component.html !-->
 
 <div>
     <h2>{{ hero.name }} Details</h2>
